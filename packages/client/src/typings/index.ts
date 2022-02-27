@@ -21,4 +21,5 @@ export interface Comment extends Exclude<CommentData, 'ua'> {
   sticky?: boolean;
   browser?: string;
   os?: string;
+  type?: string;
 }

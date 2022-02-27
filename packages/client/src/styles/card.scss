@@ -75,9 +75,21 @@
         border-radius: 3px;
 
         background: var(--waline-badge-color);
-        color: var(--waline-white);
+        color: var(--starrah-badge-text-color);
 
         font-size: var(--waline-badge-font-size);
+      }
+
+      .vbadge.usertype-administrator {
+        background: var(--starrah-badge-administrator);
+      }
+
+      .vbadge.usertype-friend {
+        background: var(--starrah-badge-friend);
+      }
+
+      .vbadge.usertype-guest {
+        background: var(--starrah-badge-guest);
       }
 
       .vtime {

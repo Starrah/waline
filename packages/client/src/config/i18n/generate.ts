@@ -31,9 +31,12 @@ const localeKeys = [
   'word',
   'wordHint',
   'anonymous',
+  'usertype',
 ];
 
-export const generateLocale = (locale: string[]): Locale =>
+export const generateLocale = (
+  locale: (string | Record<string, string>)[]
+): Locale =>
   Object.fromEntries(
     locale.map((item, index) => [localeKeys[index], item])
   ) as unknown as Locale;

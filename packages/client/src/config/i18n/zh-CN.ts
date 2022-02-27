@@ -31,4 +31,8 @@ export default generateLocale([
   '字',
   '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
   '匿名',
+  {
+    friend: '小伙伴',
+    guest: '新朋友',
+  },
 ]);

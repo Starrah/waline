@@ -29,7 +29,7 @@
   --waline-mobile-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
 
   // badge
-  --waline-badge-color: #3498db;
+  --waline-badge-color: #869194;
   --waline-badge-font-size: 0.775em;
 
   // info
@@ -47,4 +47,9 @@
   // --waline-border: none;
   // --waline-box-shadow: 0 12px 40px rgb(134 151 168 / 25%);
   // Dark: --waline-box-shadow: 0 12px 40px #0f0e0d
+
+  --starrah-badge-text-color: #fdfdfd;
+  --starrah-badge-administrator: #ed6ea0;
+  --starrah-badge-friend: #3e999f;
+  --starrah-badge-guest: #869194;
 }

@@ -29,4 +29,5 @@ export interface Locale {
   word: string;
   wordHint: string;
   anonymous: string;
+  usertype: Record<string, string>;
 }

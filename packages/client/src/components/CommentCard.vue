@@ -15,9 +15,10 @@
           >{{ comment.nick }}<VerifiedIcon v-if="comment.type" />
         </span>
         <span
-          v-if="comment.type === 'administrator'"
+          v-if="badgeContent"
           class="vbadge"
-          v-text="locale.admin"
+          :class="`usertype-${comment.type}`"
+          v-text="badgeContent"
         />
 
         <span v-if="comment.sticky" class="vbadge" v-text="locale.sticky" />
@@ -124,9 +125,16 @@ export default defineComponent({
       () => props.comment.objectId === props.reply?.objectId
     );
 
+    const badgeContent = computed(() => {
+      const locale = config.value.locale;
+      if (props.comment.type === 'administrator') return locale.admin;
+      else return (locale.usertype || {})[props.comment.type || ''];
+    });
+
     return {
       config,
       locale,
+      badgeContent,
 
       avatar,
       isReplyingCurrent,

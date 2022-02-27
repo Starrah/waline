@@ -1,3 +1,21 @@
-.waline-widget-item p {
-  display: inline;
+.waline-widget-item {
+  p {
+    display: inline;
+  }
+  img.vemoji {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.25em;
+    margin: 0.25em;
+  }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 2.5em;
+    height: 1.25em;
+    margin: 0.25em;
+  }
+  br {
+    display: none;
+  }
 }
